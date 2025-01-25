@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import UseContext from './Use_context';
+import UseContext2 from './Use_context2';
+//import UseContext from './Use_context';
 //import UseRef from './Use_ref';
 //import App from './App';
 //import UseEfect from './Use_efect';
@@ -13,7 +14,7 @@ import UseContext from './Use_context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UseContext />
+    <UseContext2 />
   </React.StrictMode>,
 );
 
