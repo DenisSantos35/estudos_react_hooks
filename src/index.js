@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import UseRef from './Use_ref';
 //import App from './App';
 //import UseEfect from './Use_efect';
 //import UseCalback from './Use_calback';
 //import UseMemo from './Use_memo';
-import UseMemo2 from './Use_memo2';
+//import UseMemo2 from './Use_memo2';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UseMemo2 />
+    <UseRef />
   </React.StrictMode>,
 );
 
