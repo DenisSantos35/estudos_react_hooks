@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import UseReduce from './Use_reduce';
+//import UseReduce from './Use_reduce';
+import UserContextReducer from './Use_context_reducer';
 //import UseContext2 from './Use_context2';
 //import UseContext from './Use_context';
 //import UseRef from './Use_ref';
@@ -15,7 +16,7 @@ import UseReduce from './Use_reduce';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UseReduce />
+    <UserContextReducer />
   </React.StrictMode>,
 );
 
