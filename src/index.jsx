@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import JoinOfHooks from './All_hooks/App/Join_of_hooks.jsx';
 //import UseReduce from './Use_reduce';
 //import UserContextReducer from './Use_context_reducer';
-import MyHook from './MyHook';
+//import MyHook from './MyHook';
 //import UseContext2 from './Use_context2';
 //import UseContext from './Use_context';
 //import UseRef from './Use_ref';
@@ -17,7 +18,7 @@ import MyHook from './MyHook';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MyHook />
+    <JoinOfHooks />
   </React.StrictMode>,
 );
 
