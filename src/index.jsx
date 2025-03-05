@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import MySecondHooks from './estudos_hooks/MySecondHooks';
+import { HomeErrorBoundaris } from './estudos_hooks/Error_boundari';
+//import { Home } from './estudos_hooks/fluxo_hooks';
+//import UseDebugValue from './estudos_hooks/Use_debug_value';
+//import UseImperactiveEffect from './estudos_hooks/Use_imperactive_effect';
+//import UseLayoutEffect from './estudos_hooks/Use_layout_effect';
+//import MySecondHooks from './estudos_hooks/MySecondHooks';
 //import JoinOfHooks from './All_hooks/App/Join_of_hooks.jsx';
 //import UseReduce from './Use_reduce';
 //import UserContextReducer from './Use_context_reducer';
@@ -19,7 +24,7 @@ import MySecondHooks from './estudos_hooks/MySecondHooks';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MySecondHooks />
+    <HomeErrorBoundaris />
   </React.StrictMode>,
 );
 

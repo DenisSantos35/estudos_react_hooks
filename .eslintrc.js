@@ -17,6 +17,7 @@ module.exports = {
   },
   parser: '@babel/eslint-parser',
   parserOptions: {
+    "requireConfigFile": false,
     ecmaFeatures: {
       jsx: true,
     },
@@ -32,4 +33,5 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
   },
+
 };
