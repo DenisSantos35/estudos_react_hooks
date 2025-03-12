@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { HomeErrorBoundaris } from './estudos_hooks/Error_boundari';
+import { Home } from './templates/Home';
+import { CounterContextProvider } from './Context/CounterContext';
+//import { HomeErrorBoundaris } from './estudos_hooks/Error_boundari';
 //import { Home } from './estudos_hooks/fluxo_hooks';
 //import UseDebugValue from './estudos_hooks/Use_debug_value';
 //import UseImperactiveEffect from './estudos_hooks/Use_imperactive_effect';
@@ -24,7 +26,9 @@ import { HomeErrorBoundaris } from './estudos_hooks/Error_boundari';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HomeErrorBoundaris />
+    <CounterContextProvider>
+      <Home />
+    </CounterContextProvider>
   </React.StrictMode>,
 );
 
