@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Routes as Switch, Route } from 'react-router';
 import './index.css';
-import { Home } from './templates/Home';
-import { CounterContextProvider } from './Context/CounterContext';
+import { App } from './templates/App';
+import { Abc } from './templates/Abc';
+import { Menu } from './components/Menu';
+//import { Home } from './templates/Home';
+//import { CounterContextProvider } from './Context/CounterContext';
 //import { HomeErrorBoundaris } from './estudos_hooks/Error_boundari';
 //import { Home } from './estudos_hooks/fluxo_hooks';
 //import UseDebugValue from './estudos_hooks/Use_debug_value';
@@ -26,9 +30,13 @@ import { CounterContextProvider } from './Context/CounterContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CounterContextProvider>
-      <Home />
-    </CounterContextProvider>
+    <Router>
+      <Menu></Menu>
+      <Switch>
+        <Route path="/" exact Component={App}></Route>
+        <Route path="/abc" exact Component={Abc}></Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
 );
 
