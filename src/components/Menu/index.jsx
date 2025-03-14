@@ -15,9 +15,15 @@ export const Menu = () => {
       <Link to="/" style={{ color: 'white' }}>
         Home
       </Link>
+      <a href="/" style={{ color: 'white' }}>
+        Home (A)
+      </a>
       <Link to="/abc" style={{ color: 'white' }}>
         Abc
       </Link>
+      <a href="/abc" style={{ color: 'white' }}>
+        Abc (A)
+      </a>
     </nav>
   );
 };

@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes as Switch, Route } from 'react-router';
+import { BrowserRouter, Routes, Route } from 'react-router';
 import './index.css';
 import { App } from './templates/App';
 import { Abc } from './templates/Abc';
 import { Menu } from './components/Menu';
+import { Page404 } from './templates/Page_404';
+import { Footer } from './components/Footer';
 //import { Home } from './templates/Home';
 //import { CounterContextProvider } from './Context/CounterContext';
 //import { HomeErrorBoundaris } from './estudos_hooks/Error_boundari';
@@ -27,16 +29,26 @@ import { Menu } from './components/Menu';
 //import UseMemo2 from './Use_memo2';
 // import reportWebVitals from './reportWebVitals';
 
+/*
+  Para criar uma rota cria se um BrowserRouter, adiciona um switch(riact v6 substituido por Routes)
+  depois as rotas
+*/
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter>
       <Menu></Menu>
-      <Switch>
-        <Route path="/" exact Component={App}></Route>
-        <Route path="/abc" exact Component={Abc}></Route>
-      </Switch>
-    </Router>
+      <Routes>
+        <Route path="/abc/:slug?/:id?" element={<Abc></Abc>}></Route>
+        <Route path="/abc/:slug/:id" Component={Abc}></Route>
+        <Route path="/abc/:slug" Component={Abc}></Route>
+        <Route path="/abc" Component={Abc}></Route>
+        <Route path="/" Component={App} exact></Route>
+        <Route path="*" Component={Page404}></Route>
+      </Routes>
+      <Footer></Footer>
+    </BrowserRouter>
   </React.StrictMode>,
 );
 

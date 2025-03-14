@@ -1,8 +1,8 @@
 export const App = () => {
   return (
-    <div>
+    <main style={{ flex: 1, padding: '20px' }}>
       <button>Counter 0 +</button>
       <button>Counter 0 -</button>
-    </div>
+    </main>
   );
 };
